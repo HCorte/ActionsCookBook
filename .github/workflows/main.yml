@@ -5,6 +5,16 @@ on:
     branches:
       - main
   workflow_dispatch:
+jobs:
+  first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the user
+        run: |
+          echo "Hello world from ${{ github.actor }}."
+          ech0 "Current branch is '${{ github.ref }}'."
+        shell: bash
     
   
   
