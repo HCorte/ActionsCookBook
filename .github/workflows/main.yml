@@ -13,9 +13,10 @@ jobs:
       - name: Greet the user
         run: |
           echo "Hello world from ${{ github.actor }}."
-          echo "Current branch is '${{ github.ref }}'."
-          tree
+          echo "Current branch is '${{ github.ref }}'."   
         shell: bash
       - name: Checkout
         uses: actions/checkout@v4.2.2
+      - name: Tree  
+        run: tree
   
