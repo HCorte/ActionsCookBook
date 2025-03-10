@@ -13,7 +13,7 @@ jobs:
       - name: Greet the user
         run: |
           echo "Hello world from ${{ github.actor }}."
-          ech0 "Current branch is '${{ github.ref }}'."
+          echo "Current branch is '${{ github.ref }}'."
           tree
         shell: bash
       - name: Checkout
